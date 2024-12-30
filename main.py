@@ -35,11 +35,7 @@ def webhook():
 def handle_message(event):
     user_message = event.message.text  # 使用者發送的訊息
 
-    # 檢查是否是股票代碼
-    if user_message.isdigit() or user_message == "大盤":
-        reply_message = generate_content_msg(user_message)
-    else:
-        reply_message = angry_gpt(user_message)
+    reply_message = angry_gpt(user_message)
     
     # 回覆訊息到 LINE
     line_bot_api.reply_message(
