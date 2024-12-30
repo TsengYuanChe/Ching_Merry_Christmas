@@ -43,4 +43,5 @@ def handle_message(event):
 
 if __name__ == "__main__":
     init_db()
+    print("資料表已初始化")
     app.run(host="0.0.0.0", port=8080)
