@@ -25,9 +25,9 @@ def angry_gpt(user_message):
 
     if occurrences:
         # 如果訊息已出現，生成歷史時間的文字
-        occurrence_text = "\n你在：\n" + "\n".join(occurrences) + "罵過同一件事：）"
+        occurrence_text = "\n你在：\n" + "\n".join(occurrences) + "\n罵過同一件事：)"
     else:
-        occurrence_text = "這是你第一次這樣罵我：（"
+        occurrence_text = "\n這是你第一次這樣罵我：（\n"
 
     # 獲取最近的對話歷史
     history = fetch_history()
