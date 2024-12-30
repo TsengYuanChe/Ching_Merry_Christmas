@@ -55,7 +55,4 @@ def angry_gpt(user_message):
     # 將歷史出現的時間追加到回覆中
     reply_message += occurrence_text
 
-    # 儲存當前對話到資料庫
-    save_to_db(user_message, reply_message)
-
     return reply_message
