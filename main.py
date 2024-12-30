@@ -3,7 +3,7 @@ from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
 import os
-from reply import angry_gpt, generate_content_msg  # 引入 reply.py 的函數
+from reply import angry_gpt  # 引入 reply.py 的函數
 
 app = Flask(__name__)
 
